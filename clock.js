@@ -263,7 +263,7 @@ function drawClock(place) {
     context.drawImage(img, coord.x, coord.y, size[0], size[1]);
 
     const logo = new Image();
-    logo.src = "/home/romio/Desktop/tmp 23.1/desenvolvimento web UFRJ/jhaysonj.github.io/images/background_clock.png";
+    logo.src = "./images/background_clock.png";
     logo.decode().then(() => {
       // Translate the center of the logo
       // to the center of the canvas.
