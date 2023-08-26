@@ -468,63 +468,83 @@ var runAnimation = (() => {
   var tz = urlParams.get("timeZone") || timezone;
   var city = tz.split("/")[1];
 
-function drawHandles() {
-  while (true) {
-    try {
-      var today = new Date();
-      var [day, month, year, hours, minutes, seconds] = today
-        .toLocaleString("en-GB", { timeZone: tz })
-        .slice()
-        .split(/:|\/|,/);
-      break;
-    } catch (e) {
-      if (e instanceof RangeError) {
-        tz = timezone;
-      } else {
-        console.log(e);
-        throw new Error("Bye, bye. See you later, alligator.");
+  function drawHandles() {
+    // '06/02/2022, 08:20:50'
+    //                         (0-23)  (0-59)  (0-59)
+    while (true) {
+      try {
+        var today = new Date();
+        var [day, month, year, hours, minutes, seconds] = today
+          .toLocaleString("en-GB", { timeZone: tz })
+          .slice()
+          .split(/:|\/|,/);
+        break;
+      } catch (e) {
+        if (e instanceof RangeError) {
+          tz = timezone;
+        } else {
+          console.log(e);
+          throw new Error("By, bye. See you later, alligator.");
+        }
       }
     }
+
+    // 12 hours format: AM / PM
+    let hours12 = hours % 12 || 12;
+
+    clock_handles[0].time2Angle = -fiveMin * (+hours12 + minutes / 60);
+    clock_handles[1].time2Angle = -oneMin * (+minutes + seconds / 60);
+    clock_handles[2].time2Angle = -oneMin * seconds;
+    clock_handles[3].time2Angle = -fiveMin * (+hours + minutes / 60) * 0.5;
+
+    // Clear screen.
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    // Draw date.
+    let date = `${day} / ${month} / ${year}`;
+    let utc = `UTC ${cityOffset}`;
+    let [region, city] = tz.split("/");
+    let [tcity, tregion, tlen, tutc] = [city, region, date, utc].map((p) =>
+      ctx.measureText(p)
+    );
+    let theight = clockRadius / 15;
+    ctx.font = setFont(theight);
+    ctx.fillStyle = white1;
+    [
+      [date, tlen],
+      [city, tcity],
+      [region, tregion],
+      [utc, tutc],
+    ].map((p, i) => {
+      ctx.fillText(
+        p[0],
+        2 * center[0] - p[1].width,
+        2 * center[1] - i * theight
+      );
+    });
+
+    ctx.lineCap = "round";
+
+    // Draw the handles.
+    clock_handles.map((handle) => {
+      ctx.strokeStyle = handle.c;
+      ctx.beginPath();
+      coord = polar2Cartesian(0.057 * clockRadius, handle.time2Angle);
+      coord = translate(coord, center);
+      ctx.moveTo(coord.x, coord.y);
+
+      var coord = polar2Cartesian(
+        handle.length * clockRadius,
+        handle.time2Angle
+      );
+      coord = translate(coord, center);
+      ctx.lineTo(coord.x, coord.y);
+      ctx.lineWidth = handle.width;
+      ctx.stroke();
+    });
+    cancelAnimationFrame(timer);
+    timer = requestAnimationFrame(drawHandles);
   }
-
-  // 12 hours format: AM / PM
-  let hours12 = hours % 12 || 12;
-
-  clock_handles[0].time2Angle = -fiveMin * (+hours12 + minutes / 60);
-  clock_handles[1].time2Angle = -oneMin * (+minutes + seconds / 60);
-  clock_handles[2].time2Angle = -oneMin * seconds;
-  clock_handles[3].time2Angle = -fiveMin * (+hours + minutes / 60) * 0.5;
-
-  // Clear screen.
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-  // ... Resto do código permanece igual ...
-
-  ctx.lineCap = "round";
-
-  // Draw the handles.
-  clock_handles.map((handle) => {
-    ctx.strokeStyle = handle.c;
-    ctx.beginPath();
-
-    // Calcular as coordenadas usando radianos (pi) e o ângulo invertido
-    let angle = handle.time2Angle; // O ângulo invertido em radianos
-    let coord = polar2Cartesian(0.057 * clockRadius, angle);
-    coord = translate(coord, center);
-    ctx.moveTo(coord.x, coord.y);
-
-    // Calcular as coordenadas para o final do ponteiro usando radianos (pi) e o ângulo invertido
-    angle = handle.time2Angle; // O ângulo invertido em radianos
-    coord = polar2Cartesian(handle.length * clockRadius, angle);
-    coord = translate(coord, center);
-    ctx.lineTo(coord.x, coord.y);
-    ctx.lineWidth = handle.width;
-    ctx.stroke();
-  });
-
-  cancelAnimationFrame(timer);
-  timer = requestAnimationFrame(drawHandles);
-}
   drawClock(city);
   timer = requestAnimationFrame(drawHandles);
   return drawHandles;
