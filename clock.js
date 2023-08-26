@@ -254,7 +254,7 @@ function drawClock(place) {
   // Browsers first loads a compressed version of image, then decodes it, finally paints it.
   // Draw the logo.
   const img = new Image();
-  img.src = "./rolex_bezel.png";
+  img.src = "./images/nada.png";
   img.decode().then(() => {
     // Translate the center of the logo
     // to the center of the canvas.
@@ -263,7 +263,7 @@ function drawClock(place) {
     context.drawImage(img, coord.x, coord.y, size[0], size[1]);
 
     const logo = new Image();
-    logo.src = "./images/porquinhos.jpeg"; // ALTEREI
+    logo.src = "/home/romio/Desktop/tmp 23.1/desenvolvimento web UFRJ/jhaysonj.github.io/images/background_clock.png";
     logo.decode().then(() => {
       // Translate the center of the logo
       // to the center of the canvas.
@@ -492,10 +492,10 @@ var runAnimation = (() => {
     // 12 hours format: AM / PM
     let hours12 = hours % 12 || 12;
 
-    clock_handles[0].time2Angle = -fiveMin * (+hours12 + minutes / 60);
-    clock_handles[1].time2Angle = -oneMin * (+minutes + seconds / 60);
-    clock_handles[2].time2Angle = -oneMin * seconds;
-    clock_handles[3].time2Angle = -fiveMin * (+hours + minutes / 60) * 0.5;
+    clock_handles[0].time2Angle = fiveMin * (+hours12 + minutes / 60);
+    clock_handles[1].time2Angle = oneMin * (+minutes + seconds / 60);
+    clock_handles[2].time2Angle = oneMin * seconds;
+    clock_handles[3].time2Angle = fiveMin * (+hours + minutes / 60) * 0.5;
 
     // Clear screen.
     ctx.clearRect(0, 0, canvas.width, canvas.height);
