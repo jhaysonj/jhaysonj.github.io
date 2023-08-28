@@ -416,6 +416,7 @@ function drawClock(place) {
  * Clock roman x color.
  * @member {Array<{txt: String, c: color}>} roman clock numbers.
  */
+// Clock roman x color.
 drawClock.romans = [
   { txt: "XII", c: white1 },
   { txt: "I", c: white1 },
@@ -425,11 +426,14 @@ drawClock.romans = [
   { txt: "V", c: white1 },
   { txt: "VI", c: white1 },
   { txt: "VII", c: white1 },
-  { txt: " VIII", c: white1 },
+  { txt: "VIII", c: white1 },
   { txt: "IX", c: grena },
   { txt: "X", c: white1 },
   { txt: "XI", c: white1 },
 ];
+
+// Invert the order of Roman numbers
+drawClock.romans.slice(1, 11).reverse();
 
 /**
  * Clock number x color.
