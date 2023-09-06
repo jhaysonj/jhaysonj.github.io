@@ -165,3 +165,39 @@ p {
     /* Aplica a animação com suavização */
     animation: swing 0.5s ease-in-out;
 }
+
+
+
+header {
+    font-family: 'Roboto Mono', monospace;
+
+    color: black; /* Cor do texto no cabeçalho */
+    padding: 0px; /* Espaçamento interno */
+    display: flex; /* Torna os elementos filhos flexíveis */
+    justify-content: space-between; /* Alinha os elementos à esquerda e à direita */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.logo img {
+    max-width: 100px; /* Define a largura máxima do logotipo */
+}
+
+nav ul {
+    list-style: none; /* Remove as marcadores de lista */
+    padding: 0; /* Remove o preenchimento padrão da lista */
+    display: flex; /* Torna os itens da lista flexíveis */
+}
+
+nav ul li {
+    margin-right: 20px; /* Espaço entre os itens do menu */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Remove a margem direita do último item */
+}
+
+nav ul li a {
+
+    text-decoration: none; /* Remove a formatação do link */
+    color: black; /* Cor do texto do link */
+}
