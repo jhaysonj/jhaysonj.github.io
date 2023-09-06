@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+h1 {
+    font-family: 'Roboto Mono', monospace;
+
+    font-weight: normal;
+    font-size: 1.5em;
+    /*margin-left: 2em;*/
+}
+
+
+
+#link_h1 {
+    color: black;
+    text-decoration: underline;
+
+    /* Define a cor do sublinhado */
+    text-decoration-color: #48b9c7;
+
+    /* Espessura da linha */
+    text-decoration-thickness: 3px;
+
+    /* Modifica a altura do sublinhado */
+    text-underline-offset: 6px;
+
+    /* Largura da linha */
+    text-decoration-skip-ink: none;
+
+
+    /* Transições suaves */
+    transition: bottom 0.2s, background-color 0.2s;
+}
+
+#link_h2 {
+
+    /* Modifica a altura do sublinhado */
+    text-underline-offset: 6px;
+
+    /* Ajuste os valores conforme necessário */
+    padding: 5px 0;
+
+    color: black;
+    text-decoration: underline;
+
+    /* Define a cor do sublinhado */
+    text-decoration-color: #48b9c7;
+
+    /* Espessura da linha */
+    text-decoration-thickness: 3px;
+
+    /* Modifica a altura do sublinhado */
+    text-underline-offset: 6px;
+
+    /* Largura da linha */
+    text-decoration-skip-ink: none;
+
+
+    /* Transições suaves */
+    transition: bottom 0.2s, background-color 0.2s;
+
+}
+
+#link_h1:hover {
+    background-color: #48b9c7;
+
+}
+
+
+#link_h2:hover {
+    background-color: #48b9c7;
+
+}
+
+
+
+h2 {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: normal;
+    font-size: 1em;
+
+     /* Modifica a altura do sublinhado */
+     text-underline-offset: 6px;
+
+     /* Ajuste os valores conforme necessário */
+     padding: 5px 0;
+ 
+     color: black;
+     text-decoration: underline;
+ 
+     /* Define a cor do sublinhado */
+     text-decoration-color: #48b9c7;
+ 
+     /* Espessura da linha */
+     text-decoration-thickness: 3px;
+ 
+     /* Modifica a altura do sublinhado */
+     text-underline-offset: 6px;
+ 
+     /* Largura da linha */
+     text-decoration-skip-ink: none;
+}
+
+
+.bloco_intermediario {
+    margin-top: 2em;
+
+}
+
+/*
+div{
+}*/
+#principal {
+    margin-left: 2em;
+    align-content: center;
+
+}
+
+time {
+    color: gray;
+    font-size: 15px;
+    display: block;
+    margin-top: 1em;
+    font-family: 'Roboto Mono', monospace;
+
+
+}
+
+p {
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 1.5;
+    margin-top: 0.2em;
+}
+
+
+/* Estilizando a imagem */
+.balancar-imagem {
+    transition: transform 0.3s ease;
+    /* Efeito de transição suave */
+}
+
+/* Definindo a animação de balanço */
+@keyframes swing {
+
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    20%,
+    80% {
+        transform: rotate(-5deg);
+    }
+
+    /* Balança 5 graus para a esquerda e para a direita */
+    40%,
+    60% {
+        transform: rotate(5deg);
+    }
+
+    /* Balança 5 graus para a direita e para a esquerda */
+}
+
+/* Aplicando a animação quando o mouse passa por cima da imagem */
+.balancar-imagem:hover {
+    animation: swing 0.5s ease-in-out;
+    /* Aplica a animação com suavização */
+}
