@@ -5,7 +5,6 @@ h1 {
 
     font-weight: normal;
     font-size: 1.5em;
-    /*margin-left: 2em;*/
 }
 
 
@@ -103,16 +102,17 @@ h2 {
 
 .bloco_intermediario {
     margin-top: 2em;
-
+    max-width: 36em; 
 }
 
-/*
-div{
-}*/
-#principal {
-    margin-left: 2em;
-    align-content: center;
-
+body {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    margin-left: 1em;
+    margin-right: 1em;
+    word-wrap: break-word;
+    
 }
 
 time {
@@ -134,8 +134,8 @@ p {
 
 /* Estilizando a imagem */
 .balancar-imagem {
-    transition: transform 0.3s ease;
     /* Efeito de transição suave */
+    transition: transform 0.3s ease;
 }
 
 /* Definindo a animação de balanço */
@@ -162,6 +162,6 @@ p {
 
 /* Aplicando a animação quando o mouse passa por cima da imagem */
 .balancar-imagem:hover {
-    animation: swing 0.5s ease-in-out;
     /* Aplica a animação com suavização */
+    animation: swing 0.5s ease-in-out;
 }
