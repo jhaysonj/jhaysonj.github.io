@@ -8,12 +8,12 @@
     <title>Jhayson Jales | Home</title>
     <link rel="stylesheet" href="../../assets/css/main.css">
 
-    
+
 </head>
 
 <body>
     <div id="principal">
-        
+
 
         <header>
             <nav>
@@ -26,70 +26,82 @@
 
         <h1><a href="ex2.html" id="link_h1">Meu Primeiro Website</a></h1>
         <p>A <a href="../../index.html">Main page</a> utiliza todas as tags, exceto as listadas abaixo:
-            <ol>
-                <li>Ordered List</li>
-                <li>Forms</li>
-                <li>Tables</li>
-            </ol>
-        A main page também não possui a tag de video, o video está localizado em <a href="../ex1/ex1.html">Relógio Invertido</a>.
+        <ol>
+            <li>Ordered List</li>
+            <li>Forms</li>
+            <li>Tables</li>
+            <li>Video</li>
+        </ol>
+        Na main page exibimos a imagem abaixo:
         </p>
-        
-       <h2>Implementação do Forms</h2>
-       <form>
-        <p>Usuário: <input type="text" placeholder="seu nome de usuário" /></p>
+        <img src="../../assets/images/eu_200.png" alt="Foto do Jhayson">
 
-        
-
-         <p>
-            Bom uso de CSS?
-            <select>
-                <option selected>Sim</option>
-                <option >Não</option>
-            </select>
+        <p style="margin-top: 1.5em;">Já na página <a href="../ex2/ex2.html">Relógio Invertido</a>, exibimos o video
+            abaixo:
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/IFYUtbu_G5c?si=xWtkWTo6Wv-iZX6d"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
         </p>
 
-        <p>
-            Boa construção HTML?
-            <select>
-                <option selected>Sim</option>
-                <option >Não</option>
-            </select>
-        </p>
 
-        <p><input type="submit" value="Responder!" /></p>
-        
-       
-        <h2>Implementação da Tabela</h2>
-        <p>Para cada projeto apresentados na <a href="../../index.html">Página Principal</a>, vamos utilizar tabela para listar de onde é e quantos são os projetos:</p>
-        <table>
-            <thead>
-                <!-- table row -->
+        <h2>Implementação do Forms</h2>
+        <form>
+            <p>Usuário: <input type="text" placeholder="seu nome de usuário" /></p>
+
+
+
+            <p>
+                Bom uso de CSS?
+                <select>
+                    <option selected>Sim</option>
+                    <option>Não</option>
+                </select>
+            </p>
+
+            <p>
+                Boa construção HTML?
+                <select>
+                    <option selected>Sim</option>
+                    <option>Não</option>
+                </select>
+            </p>
+
+            <p><input type="submit" value="Responder!" /></p>
+
+
+            <h2>Implementação da Tabela</h2>
+            <p>Para cada projeto apresentados na <a href="../../index.html">Página Principal</a>, vamos utilizar tabela
+                para listar de onde é e quantos são os projetos:</p>
+            <table>
+                <thead>
+                    <!-- table row -->
+                    <tr>
+                        <!-- table header -->
+                        <th>Nome do projeto</th>
+                        <th>Quantidade</th>
+                    </tr>
+                </thead>
+
                 <tr>
-                    <!-- table header -->
-                    <th>Nome do projeto</th>
-                    <th>Quantidade</th>
+                    <!-- table data -->
+                    <td>GRIS</td>
+                    <td>2</td>
                 </tr>
-            </thead>
 
-            <tr>
-                <!-- table data -->
-                <td>GRIS</td>
-                <td>2</td>
-            </tr>
+                <tr>
+                    <td>UFRJ</td>
+                    <td>2</td>
+                </tr>
 
-            <tr>
-                <td>UFRJ</td>
-                <td>2</td>
-            </tr>
+                <tr>
+                    <td>Hackathon</td>
+                    <td>1</td>
+                </tr>
 
-            <tr>
-                <td>Hackathon</td>
-                <td>1</td>
-            </tr>
+            </table>
 
-        </table>
-            
-           
+
     </div>
 
     </div>
