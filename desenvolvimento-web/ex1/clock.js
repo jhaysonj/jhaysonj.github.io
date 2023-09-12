@@ -67,22 +67,22 @@ const fiveMin = pi / 6;
 var style = getComputedStyle(document.head);
 
 // Handle's origin border, III and IX, and clock border color.
-const grena = style.getPropertyValue("--cgrena");
+const pink = style.getPropertyValue("--cpink");
 
 // Unused.
-const green = style.getPropertyValue("--cgreen");
+const lighter = style.getPropertyValue("--clighter");
 
 // Handles and day light arc color.
-const orange = style.getPropertyValue("--corange");
+const dollhouse = style.getPropertyValue("--cdollhouse");
 
 // Handle's origin fill color.
 const white = style.getPropertyValue("--cwhite");
 
 // Roman numbers and date color.
-const white1 = style.getPropertyValue("--cwhite1");
+const white1 = style.getPropertyValue("--clighter");
 
 // Decimal numbers color.
-const white2 = style.getPropertyValue("--cwhite2");
+const white2 = style.getPropertyValue("--cbubblegun");
 
 // 6 and 18 and 24h handle color.
 const white3 = style.getPropertyValue("--cwhite3");
@@ -254,7 +254,7 @@ function drawClock(place) {
   // Browsers first loads a compressed version of image, then decodes it, finally paints it.
   // Draw the logo.
   const img = new Image();
-  img.src = "./images/nada.png";
+  img.src = "images/Untitled.png";
   img.decode().then(() => {
     // Translate the center of the logo
     // to the center of the canvas.
@@ -271,7 +271,7 @@ function drawClock(place) {
       var coord = translate(scale(size, [-1 / 2, -1 / 2]), center);
       context.drawImage(logo, coord.x, coord.y, size[0], size[1]);
       // Handle origin.
-      context.strokeStyle = grena;
+      context.strokeStyle = pink;
       context.fillStyle = white;
       circle(center, 10);
       circle(center, 10, false);
@@ -281,7 +281,7 @@ function drawClock(place) {
   // context.globalAlpha = 0.3; // set global alpha
 
   // Draw clock border.
-  context.strokeStyle = grena;
+  context.strokeStyle = pink;
   context.lineWidth = 3;
   circle(center, clockRadius - 8, false);
 
@@ -416,24 +416,20 @@ function drawClock(place) {
  * Clock roman x color.
  * @member {Array<{txt: String, c: color}>} roman clock numbers.
  */
-// Clock roman x color.
 drawClock.romans = [
-  { txt: "XII", c: white1 },
-  { txt: "I", c: white1 },
-  { txt: "II", c: white1 },
-  { txt: "III", c: grena },
-  { txt: "IV", c: white1 },
-  { txt: "V", c: white1 },
-  { txt: "VI", c: white1 },
-  { txt: "VII", c: white1 },
-  { txt: "VIII", c: white1 },
-  { txt: "IX", c: grena },
-  { txt: "X", c: white1 },
-  { txt: "XI", c: white1 },
+  { txt: "XII", c: pink },
+  { txt: "XI", c: pink },
+  { txt: "X", c: pink },
+  { txt: "IX", c: pink },
+  { txt: "VIII", c: pink },
+  { txt: "VII", c: pink },
+  { txt: "VI", c: pink },
+  { txt: "V", c: pink },
+  { txt: "IV", c: pink },
+  { txt: "III", c: pink },
+  { txt: "II", c: pink },
+  { txt: "I", c: pink },
 ];
-
-// Invert the order of Roman numbers
-drawClock.romans.slice(1, 11).reverse();
 
 /**
  * Clock number x color.
@@ -458,12 +454,12 @@ drawClock.decimals[18].c = white3;
 var runAnimation = (() => {
   // clock handles width x length X color
   const clock_handles = [
-    { width: 8, length: 0.5, c: orange },
-    { width: 8, length: 0.8, c: orange },
-    { width: 2, length: 0.9, c: orange },
+    { width: 8, length: 0.5, c: dollhouse },
+    { width: 8, length: 0.8, c: dollhouse },
+    { width: 2, length: 0.9, c: dollhouse },
     { width: 1, length: 0.95, c: white3 },
   ];
-  const oneMin = pi / 30; // 6 degrees
+  const oneMin = -(pi / 30); // 6 degrees
   let timer = null;
 
   const queryString = window.location.search;
@@ -496,10 +492,10 @@ var runAnimation = (() => {
     // 12 hours format: AM / PM
     let hours12 = hours % 12 || 12;
 
-    clock_handles[0].time2Angle = -fiveMin * (+hours12 + minutes / 60);
-    clock_handles[1].time2Angle = -oneMin * (+minutes + seconds / 60);
-    clock_handles[2].time2Angle = -oneMin * seconds;
-    clock_handles[3].time2Angle = -fiveMin * (+hours + minutes / 60) * 0.5;
+    clock_handles[0].time2Angle = fiveMin * (+hours12 + minutes / 60);
+    clock_handles[1].time2Angle = oneMin * (+minutes + seconds / 60);
+    clock_handles[2].time2Angle = oneMin * seconds;
+    clock_handles[3].time2Angle = fiveMin * (+hours + minutes / 60) * 0.5;
 
     // Clear screen.
     ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -541,7 +537,7 @@ var runAnimation = (() => {
         handle.length * clockRadius,
         handle.time2Angle
       );
-      coord = translate(coord, center);
+      coord = translate(coord , center);
       ctx.lineTo(coord.x, coord.y);
       ctx.lineWidth = handle.width;
       ctx.stroke();

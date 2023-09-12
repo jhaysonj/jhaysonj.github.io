@@ -5,7 +5,7 @@
     <title>Bardo's Clock</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/cwdc/mainPage/LCG.css" />
+    <link rel="stylesheet" href="../../assets/css/main.css" />
     <style>
         :root {
             --cgrena: #7e2e00;
@@ -58,61 +58,72 @@
 </head>
 
 <body>
-    <p id="flu">
-        <a href="https://www.nintendo.com/pt-br/store/products/animal-crossing-new-horizons-switch/" >Animal clocking</a>
-    </p>
+    <div id="principal">
+        <header>
+            <nav>
+                <ul>
+                    <li><a id="link_h2" href="../../index.html">Home</a></li>
+                    <li><a id="link_h2" href="../main_web_dev.html">Voltar</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h1>
+            <a id="link_h1" href="https://www.nintendo.com/pt-br/store/products/animal-crossing-new-horizons-switch/">Animal
+                Clocking</a>
+            </h1>
 
-    <div id="container">
-        <canvas id="clock" width="512" height="512">
-            Please upgrade your browser.
-        </canvas>
-        <canvas id="handles" width="512" height="512">
-            Please upgrade your browser.
-        </canvas>
+        <div id="container">
+            <canvas id="clock" width="512" height="512">
+                Please upgrade your browser.
+            </canvas>
+            <canvas id="handles" width="512" height="512">
+                Please upgrade your browser.
+            </canvas>
+        </div>
+        <br />
+        <p>
+            <audio title="Porquinhos famintos" controls>
+                <source src="media/cui-cui.mp3" type="audio/mpeg" />
+                Please upgrade your browser!
+            </audio>
+
+            <small>
+                Quando os porquinhos da india sentem fome eles fazem esse barulho popularmente chamado de "cui-cui"
+                <a
+                    href="https://www.zooplus.pt/magazine/roedores-e-furoes/adotar-um-roedor-ou-furao/sons-dos-porquinhos-da-india#cu%C3%AD-alto">
+                    Sons dos porquinhos-da-índia.
+                </a>
+            </small>
+        </p>
+        <p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/IFYUtbu_G5c?si=zbGUpfNuZg8TgeC9"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+
+
+            <br />
+            <small id="curiosidade_porquinhos">
+
+                <a href="https://www.youtube.com/watch?v=eD-DQYH5ZoE">
+                    Curiosidades dos porquinhos da india
+                </a>
+            </small>
+            <br />
+
+            <small id="animal_engracado">
+
+                <a href="https://www.youtube.com/watch?v=EIVvQQJG3W8">
+                    Video engraçado de animais
+                </a>
+            </small>
+        </p>
+
+        <script src="suncalc.js"></script>
+        <script src="clock.js"></script>
+        <script src="date.js"></script>
+
     </div>
-    <br />
-    <p>
-        <audio title="Porquinhos famintos" controls>
-            <source src="media/cui-cui.mp3" type="audio/mpeg" />
-            Please upgrade your browser!
-        </audio>
-
-        <small>
-            Quando os porquinhos da india sentem fome eles fazem esse barulho popularmente chamado de "cui-cui"
-            <a
-                href="https://www.zooplus.pt/magazine/roedores-e-furoes/adotar-um-roedor-ou-furao/sons-dos-porquinhos-da-india#cu%C3%AD-alto">
-                Sons dos porquinhos-da-índia.
-            </a>
-        </small>
-    </p>
-    <p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/IFYUtbu_G5c?si=zbGUpfNuZg8TgeC9"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-        
-            
-        <br />
-        <small id="curiosidade_porquinhos">
-
-            <a href="https://www.youtube.com/watch?v=eD-DQYH5ZoE">
-                Curiosidades dos porquinhos da india
-            </a>
-        </small>
-        <br />
-        
-        <small id="animal_engracado">
-
-            <a href="https://www.youtube.com/watch?v=EIVvQQJG3W8">
-                Video engraçado de animais
-            </a>
-        </small>
-    </p>
-
-    <script src="suncalc.js"></script>
-    <script src="clock.js"></script>
-    <script src="date.js"></script>
-
 </body>
 
 </html>
