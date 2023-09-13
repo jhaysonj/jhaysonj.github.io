@@ -473,7 +473,7 @@ var runAnimation = (() => {
     //                         (0-23)  (0-59)  (0-59)
     while (true) {
       try {
-        var today = new Date();
+        var today = new Date();ctx.strokeStyle = "#48b9c7"; // Define a cor #48b9c7 para todos os ponteiros
         var [day, month, year, hours, minutes, seconds] = today
           .toLocaleString("en-GB", { timeZone: tz })
           .slice()
@@ -492,10 +492,10 @@ var runAnimation = (() => {
     // 12 hours format: AM / PM
     let hours12 = hours % 12 || 12;
 
-    clock_handles[0].time2Angle = fiveMin * (+hours12 + minutes / 60);
+    clock_handles[0].time2Angle = -fiveMin * (+hours12 + minutes / 60);
     clock_handles[1].time2Angle = oneMin * (+minutes + seconds / 60);
     clock_handles[2].time2Angle = oneMin * seconds;
-    clock_handles[3].time2Angle = fiveMin * (+hours + minutes / 60) * 0.5;
+    clock_handles[3].time2Angle = -fiveMin * (+hours + minutes / 60) * 0.5;
 
     // Clear screen.
     ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -528,6 +528,7 @@ var runAnimation = (() => {
     // Draw the handles.
     clock_handles.map((handle) => {
       ctx.strokeStyle = handle.c;
+      ctx.strokeStyle = "#48b9c7"; // Define a cor #48b9c7 para todos os ponteiros
       ctx.beginPath();
       coord = polar2Cartesian(0.057 * clockRadius, handle.time2Angle);
       coord = translate(coord, center);
