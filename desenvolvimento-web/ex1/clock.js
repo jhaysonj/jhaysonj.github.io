@@ -254,7 +254,7 @@ function drawClock(place) {
   // Browsers first loads a compressed version of image, then decodes it, finally paints it.
   // Draw the logo.
   const img = new Image();
-  img.src = "images/Untitled.png";
+  img.src = "images/hamster_bezel.png";
   img.decode().then(() => {
     // Translate the center of the logo
     // to the center of the canvas.
@@ -436,9 +436,9 @@ drawClock.romans = [
  * @member {Array<{txt: String, c: color}>} decimal clock numbers.
  */
 drawClock.decimals = Array.from(Array(24), (_, i) => {
-  return { txt: String(i), c: white2 };
+  return { txt: String(24 - i), c: white2 };
 });
-drawClock.decimals[0].txt = "24";
+drawClock.decimals[0].txt = "24"; // Mude o primeiro número de "24" para "1"
 drawClock.decimals[6].c = white3;
 drawClock.decimals[18].c = white3;
 
