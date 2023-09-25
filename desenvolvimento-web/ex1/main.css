@@ -1,0 +1,263 @@
+@charset "UTF-8";
+
+h1 {
+    font-family: 'Roboto Mono', monospace;
+
+    font-weight: normal;
+    font-size: 1.5em;
+}
+
+
+
+#link_h1 {
+    color: black;
+    text-decoration: underline;
+
+    /* Define a cor do sublinhado */
+    text-decoration-color: #48b9c7;
+
+    /* Espessura da linha */
+    text-decoration-thickness: 3px;
+
+    /* Modifica a altura do sublinhado */
+    text-underline-offset: 6px;
+
+    /* Largura da linha */
+    text-decoration-skip-ink: none;
+
+
+    /* Transições suaves */
+    transition: bottom 0.2s, background-color 0.2s;
+}
+
+#link_h2 {
+
+    /* Modifica a altura do sublinhado */
+    text-underline-offset: 6px;
+
+    /* Ajuste os valores conforme necessário */
+    padding: 5px 0;
+
+    color: black;
+    text-decoration: underline;
+
+    /* Define a cor do sublinhado */
+    text-decoration-color: #48b9c7;
+
+    /* Espessura da linha */
+    text-decoration-thickness: 3px;
+
+    /* Modifica a altura do sublinhado */
+    text-underline-offset: 6px;
+
+    /* Largura da linha */
+    text-decoration-skip-ink: none;
+
+
+    /* Transições suaves */
+    transition: bottom 0.2s, background-color 0.2s;
+
+}
+
+#link_h1:hover {
+    background-color: #48b9c7;
+
+}
+
+
+#link_h2:hover {
+    background-color: #48b9c7;
+
+}
+
+
+
+h2 {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: normal;
+    font-size: 1em;
+
+     /* Modifica a altura do sublinhado */
+     text-underline-offset: 6px;
+
+     /* Ajuste os valores conforme necessário */
+     padding: 5px 0;
+ 
+     color: black;
+     text-decoration: underline;
+ 
+     /* Define a cor do sublinhado */
+     text-decoration-color: #48b9c7;
+ 
+     /* Espessura da linha */
+     text-decoration-thickness: 3px;
+ 
+     /* Modifica a altura do sublinhado */
+     text-underline-offset: 6px;
+ 
+     /* Largura da linha */
+     text-decoration-skip-ink: none;
+}
+
+
+.bloco_intermediario {
+    margin-top: 2em;
+    max-width: 36em; 
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    margin-left: 1em;
+    margin-right: 1em;
+    word-wrap: break-word;
+    
+}
+
+time {
+    color: gray;
+    font-size: 15px;
+    display: block;
+    margin-top: 1em;
+    font-family: 'Roboto Mono', monospace;
+
+
+}
+
+p {
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 1.5;
+    margin-top: 0.2em;
+}
+
+
+/* Estilizando a imagem */
+.balancar-imagem {
+    /* Efeito de transição suave */
+    transition: transform 0.3s ease;
+}
+
+/* Definindo a animação de balanço */
+@keyframes swing {
+
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    20%,
+    80% {
+        transform: rotate(-5deg);
+    }
+
+    /* Balança 5 graus para a esquerda e para a direita */
+    40%,
+    60% {
+        transform: rotate(5deg);
+    }
+
+    /* Balança 5 graus para a direita e para a esquerda */
+}
+
+/* Aplicando a animação quando o mouse passa por cima da imagem */
+.balancar-imagem:hover {
+    /* Aplica a animação com suavização */
+    animation: swing 0.5s ease-in-out;
+}
+
+
+
+header {
+    font-family: 'Roboto Mono', monospace;
+
+    color: black; /* Cor do texto no cabeçalho */
+    padding: 0px; /* Espaçamento interno */
+    display: flex; /* Torna os elementos filhos flexíveis */
+    justify-content: space-between; /* Alinha os elementos à esquerda e à direita */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.logo img {
+    max-width: 100px; /* Define a largura máxima do logotipo */
+}
+
+nav ul {
+    list-style: none; /* Remove as marcadores de lista */
+    padding: 0; /* Remove o preenchimento padrão da lista */
+    display: flex; /* Torna os itens da lista flexíveis */
+}
+
+nav ul li {
+    margin-right: 20px; /* Espaço entre os itens do menu */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Remove a margem direita do último item */
+}
+
+nav ul li a {
+
+    text-decoration: none; /* Remove a formatação do link */
+    color: black; /* Cor do texto do link */
+}
+
+
+table {
+    /* Ajuste o valor conforme desejado */
+    border-spacing: 10px; 
+    
+    /* Garante que o espaçamento seja aplicado */
+    border-collapse: separate; 
+}
+
+/* Estilo adicional para melhorar a visualização */
+table th, table td {
+    /* Espaçamento interno nas células */
+    padding: 10px; 
+    /* Borda para as células */
+    border: 1px solid #ccc; 
+}
+
+
+:root {
+    --cgrena: #696969;
+    --cgreen: #446127;
+    --corange: orange;
+    --cwhite: white;
+    --cwhite1: white;
+    --cwhite2: white;
+    --cwhite3: #000000;
+}
+
+#clock,
+#handles {
+    border: 5px solid #8b2439;
+    padding: 10px;
+    margin: 0px;
+}
+#flu {
+    width: 512px;
+    font-family: cursive;
+    font-size: 30px;
+}
+#container {
+    position: relative;
+    height: 352px;
+    margin: 0px;
+    margin-bottom: 30px;
+}
+canvas {
+    position: absolute; 
+}
+#handles {
+    z-index: 2;
+}
+#clock {
+    background: url("./flag2.jpg");
+    background-size: 512px 512px;
+    background-size: cover;
+    z-index: 1;
+}

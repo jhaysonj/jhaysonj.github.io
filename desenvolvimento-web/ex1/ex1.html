@@ -2,44 +2,40 @@
 <html>
 
 <head>
-    <title>Bardo's Clock</title>
+    <title>Flu's Clock</title>
     <meta charset="utf-8" />
+    <link rel="stylesheet"
+        href="./main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../assets/css/main.css" />
     <style>
         :root {
-            --cgrena: #7e2e00;
-            --cgreen: #216d2d;
-            --corange: orange;
+            --cgrena: orange;
+            --cgreen: #446127;
+            --corange: #696969;
             --cwhite: white;
-            --cwhite1: #8b5224;
-            --cwhite2: #446127;
-            --cwhite3: #446127;
-        }
-
-        body {
-            margin: 20px;
+            --cwhite1: white;
+            --cwhite2: white;
+            --cwhite3: #000000;
         }
 
         #clock,
         #handles {
             border: 5px solid #8b2439;
-            padding: 20px;
+            padding: 10px;
             margin: 0px;
         }
 
         #flu {
             width: 512px;
             font-family: cursive;
-            text-align: center;
             font-size: 30px;
         }
 
         #container {
             position: relative;
-            height: 512px;
+            height: 352px;
             margin: 0px;
-            margin-bottom: 50px;
+            margin-bottom: 30px;
         }
 
         canvas {
@@ -51,7 +47,9 @@
         }
 
         #clock {
-            background-color: antiquewhite;
+            background: url("./flag3.jpg");
+            background-size: 512px 512px;
+            background-size: cover;
             z-index: 1;
         }
     </style>
@@ -67,23 +65,28 @@
                 </ul>
             </nav>
         </header>
+
         <h1>
-            <a id="link_h1" href="https://www.nintendo.com/pt-br/store/products/animal-crossing-new-horizons-switch/">Animal
+            <a id="link_h1"
+                href="https://www.nintendo.com/pt-br/store/products/animal-crossing-new-horizons-switch/">Animal
                 Clocking</a>
-            </h1>
+        </h1>
 
         <div id="container">
-            <canvas id="clock" width="512" height="512">
+            <canvas id="clock" width="503" height="352">
                 Please upgrade your browser.
             </canvas>
-            <canvas id="handles" width="512" height="512">
+            <canvas id="handles" width="503" height="352">
                 Please upgrade your browser.
             </canvas>
         </div>
+
         <br />
         <p>
             <audio title="Porquinhos famintos" controls>
-                <source src="media/cui-cui.mp3" type="audio/mpeg" />
+                <source
+                    src="./media/cui-cui.mp3"
+                    type="audio/mpeg" />
                 Please upgrade your browser!
             </audio>
 
@@ -96,12 +99,10 @@
             </small>
         </p>
         <p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/IFYUtbu_G5c?si=zbGUpfNuZg8TgeC9"
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/IFYUtbu_G5c?si=ISheJU5RkaFyxgaP"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
-
-
             <br />
             <small id="curiosidade_porquinhos">
 
@@ -123,7 +124,7 @@
         <script src="clock.js"></script>
         <script src="date.js"></script>
 
-    </div>
+
 </body>
 
 </html>
