@@ -1,0 +1,126 @@
+1694982457925	geckodriver	INFO	Listening on 127.0.0.1:57745
+1694982457930	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "37927" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileoBkZsV"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694982458407	Marionette	INFO	Marionette enabled
+1694982458486	Marionette	INFO	Listening on port 46727
+WebDriver BiDi listening on ws://127.0.0.1:37927
+Read port: 46727
+1694982458645	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+DevTools listening on ws://127.0.0.1:37927/devtools/browser/63b7bf9c-e030-4d6b-849c-3d491f9b4c85
+1694982478354	geckodriver	INFO	Listening on 127.0.0.1:56165
+1694982478358	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "57425" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileVcQBXC"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694982478834	Marionette	INFO	Marionette enabled
+1694982478929	Marionette	INFO	Listening on port 35781
+WebDriver BiDi listening on ws://127.0.0.1:57425
+Read port: 35781
+1694982479067	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+DevTools listening on ws://127.0.0.1:57425/devtools/browser/c7010af2-34ff-48f6-b71f-32fefbeb4673
+1694982481595	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1694982566233	geckodriver	INFO	Listening on 127.0.0.1:38807
+1694982566235	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "48729" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileSR4CkO"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694982566755	Marionette	INFO	Marionette enabled
+1694982566881	Marionette	INFO	Listening on port 41395
+WebDriver BiDi listening on ws://127.0.0.1:48729
+Read port: 41395
+1694982567037	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+DevTools listening on ws://127.0.0.1:48729/devtools/browser/d7421882-785c-4d14-8495-b2682b5a7193
+JavaScript warning: https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js, line 4588: Script terminated by timeout at:
+J@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:4588:18
+Mgd@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:27362:93
+get@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:27366:94
+m@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:3424:318
+get@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:3425:125
+get@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:3698:144
+Lt</a._prepareTemplate@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:3680:37
+pRa/e._finalizeClass@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:4158:343
+xNa</e.finalize@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:3506:125
+Lt</a.prototype._initializeProperties@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:3684:63
+Wu</a.prototype._initializeProperties@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:4098:282
+b@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:3474:789
+a@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:3517:23
+b@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:3532:50
+a@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:3595:62
+e@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:3505:36
+a@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:3678:40
+b@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:3832:51
+a@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:3998:223
+a@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:4085:293
+e@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:4157:76
+g@https://www.youtube.com/s/desktop/dbf5c200/jsbin/custom-elements-es5-adapter.vflset/custom-elements-es5-adapter.js:11:117
+NNa</b.prototype._stampTemplate@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:3543:219
+Kt</a.prototype._stampTemplate@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:3653:115
+Lt</a.prototype.ready@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:3690:62
+rQa</a.prototype.ready@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:4001:48
+Wu</a.prototype.ready@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:4101:73
+pRa/e.prototype.ready@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:4163:48
+tNa</b.prototype._enableProperties@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:3490:209
+Wu</a.prototype._enableProperties@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:4090:98
+xNa</e.prototype.connectedCallback@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:3510:119
+Lt</a.prototype.connectedCallback@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:3689:140
+rQa</a.prototype.connectedCallback@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:4002:103
+Wu</a.prototype.connectedCallback@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:4092:157
+attachShadow@https://www.youtube.com/s/desktop/dbf5c200/jsbin/webcomponents-sd.vflset/webcomponents-sd.js:95:360
+k.attachShadow@https://www.youtube.com/s/desktop/dbf5c200/jsbin/webcomponents-sd.vflset/webcomponents-sd.js:123:124
+Lt</a.prototype._attachDom@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:3692:96
+Lt</a.prototype._readyClients@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:3691:70
+Kt</a.prototype._flushClients@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:3614:125
+Kt</a.prototype._propertiesChanged@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:3620:69
+tNa</b.prototype._flushProperties@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:3491:200
+Kt</a.prototype.ready@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:3618:35
+Lt</a.prototype.ready@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:3690:131
+rQa</a.prototype.ready@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:4001:48
+Wu</a.prototype.ready@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:4101:73
+pRa/e.prototype.ready@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:4163:48
+tNa</b.prototype._enableProperties@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:3490:209
+Wu</a.prototype._enableProperties@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:4090:98
+xNa</e.prototype.connectedCallback@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:3510:119
+Lt</a.prototype.connectedCallback@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:3689:140
+rQa</a.prototype.connectedCallback@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:4002:103
+Wu</a.prototype.connectedCallback@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:4092:157
+Wu</a.prototype.attributeChangedCallback@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:4096:205
+hub/Polymer.Base.attributeChangedCallback@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:8748:100
+Wu</a.prototype.removeAttribute@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:4089:223
+appLoad@https://www.youtube.com/watch?v=gGdGFtwCNBE:84:270
+S@https://www.youtube.com/s/desktop/dbf5c200/jsbin/scheduler.vflset/scheduler.js:43:19
+V@https://www.youtube.com/s/desktop/dbf5c200/jsbin/scheduler.vflset/scheduler.js:52:415
+g.S@https://www.youtube.com/s/desktop/dbf5c200/jsbin/scheduler.vflset/scheduler.js:48:84
+window.requestAnimationFrame/<@https://www.youtube.com/s/desktop/dbf5c200/jsbin/web-animations-next-lite.min.vflset/web-animations-next-lite.min.js:96:192
+
+1694982570030	Marionette	INFO	Stopped listening on port 41395
+1694982605193	geckodriver	INFO	Listening on 127.0.0.1:38863
+1694982605195	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "36945" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilesGK6cm"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694982605699	Marionette	INFO	Marionette enabled
+1694982605794	Marionette	INFO	Listening on port 39819
+Read port: 39819
+WebDriver BiDi listening on ws://127.0.0.1:36945
+1694982605833	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+DevTools listening on ws://127.0.0.1:36945/devtools/browser/0d43e267-6001-4b31-951b-c4e36f5bfba1
+1694982608357	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://www.google.com/js/th/vRt-gXLT3vgZrPcGQnA9jtZzsK74Y7iTYyzxha3oej4.js line 2 > eval line 5043 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js, line 2540: Script terminated by timeout at:
+Ep.prototype.transition@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:2540:33
+iI/<@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:8541:114
+
+1694982616227	Marionette	INFO	Stopped listening on port 39819
+JavaScript warning: https://www.google.com/js/th/vRt-gXLT3vgZrPcGQnA9jtZzsK74Y7iTYyzxha3oej4.js line 2 > eval line 1525 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js, line 2540: Script terminated by timeout at:
+Ep.prototype.transition@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:2540:33
+iI/<@https://www.youtube.com/s/desktop/dbf5c200/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:8541:114
+
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1694984873453	Marionette	INFO	Stopped listening on port 35781
+JavaScript warning: https://www.google.com/js/th/vRt-gXLT3vgZrPcGQnA9jtZzsK74Y7iTYyzxha3oej4.js line 2 > eval line 5771 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1694984874647	Marionette	INFO	Stopped listening on port 46727

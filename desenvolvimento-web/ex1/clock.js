@@ -493,7 +493,7 @@ var runAnimation = (() => {
     let hours12 = hours % 12 || 12;
 
     clock_handles[0].time2Angle = -fiveMin * (+hours12 + minutes / 60);
-    clock_handles[1].time2Angle = oneMin * (+minutes + seconds / 60);
+    clock_handles[1].time2Angle = -oneMin * (+minutes + seconds / 60);
     clock_handles[2].time2Angle = -oneMin * seconds;
     clock_handles[3].time2Angle = -fiveMin * (+hours + minutes / 60) * 0.5;
     
